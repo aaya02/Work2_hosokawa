@@ -44,17 +44,19 @@ img {
     max-width: 960px;
     padding-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
 
 h1 {
     padding: 0 0 0 10px;
+    margin-right: auto;
 }
 
 ul {
     display: flex;
+    justify-content: flex-end;
 }
 
 li {
@@ -63,11 +65,12 @@ li {
 }
 
 li:last-child {
-    border-right: none;
+    border: none;
 }
 
 @media screen and (max-width: 767px) {
     .header {
+        max-width: 767px;
         display: block;
     }
 
@@ -85,7 +88,9 @@ li:last-child {
         height: 30px;
         margin-bottom: 12px;
     }
-
+    li:last-child {
+        border-bottom: 2px solid #000;
+    }
     a {
         font-size: 14px;
     }
